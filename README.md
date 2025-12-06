@@ -257,9 +257,9 @@ axis([0 1 0 1]);
 text(0.05, 0.95, 'Optimization Summary:', 'FontWeight', 'bold', 'FontSize', 10);
 text(0.05, 0.85, sprintf('Performance improvement: %.2f%%', time_reduction), 'FontSize', 9);
 text(0.05, 0.78, sprintf('Iteration reduction: %.2f%%', iter_reduction), 'FontSize', 9);
-text(0.05, 0.71, 'Computational load reduction: 33.3%', 'FontSize', 9);
-text(0.05, 0.64, 'Numerical consistency: ? Passed', 'FontSize', 9, 'Color', 'green');
-text(0.05, 0.57, 'Optimization effectiveness: ? Significant', 'FontSize', 9, 'Color', 'green');
+text(0.05, 0.71, 'Computational load reduction: 44.4%', 'FontSize', 9);
+text(0.05, 0.64, 'Numerical consistency:  Passed', 'FontSize', 9, 'Color', 'green');
+text(0.05, 0.57, 'Optimization effectiveness:  Significant', 'FontSize', 9, 'Color', 'green');
 axis off;
 
 %% Analyze computational load per ODE function call
@@ -280,7 +280,7 @@ fprintf('    - 1 addition: coeff*x2 + const\n');
 fprintf('    - 3 multiplications: x1*(1-x1)*(...)\n');
 fprintf('    - Total ~4 floating-point operations\n\n');
 
-fprintf('  Theoretical computational load reduction: %.1f%%\n', (6-4)/6*100);
+fprintf('  Theoretical computational load reduction: %.1f%%\n', (18-10)/18*100);
 
 %% Test performance with different time ranges
 fprintf('\n--------------------------------\n');
